@@ -5,7 +5,8 @@
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "microphone": "*"
+        "microphone": "*",
+        "L3_contiol": "github:martinmcy/1269#master"
     },
     "files": [
         "README.md",
