@@ -2,13 +2,13 @@ function right () {
     sensors.DDMmotor(
     AnalogPin.P13,
     0,
-    AnalogPin.P0,
+    AnalogPin.P14,
     100
     )
     sensors.DDMmotor(
     AnalogPin.P15,
     0,
-    AnalogPin.P0,
+    AnalogPin.P16,
     0
     )
 }
@@ -29,13 +29,13 @@ function back () {
     sensors.DDMmotor(
     AnalogPin.P13,
     1,
-    AnalogPin.P0,
+    AnalogPin.P14,
     100
     )
     sensors.DDMmotor(
     AnalogPin.P15,
     1,
-    AnalogPin.P0,
+    AnalogPin.P16,
     100
     )
 }
@@ -43,13 +43,13 @@ function front () {
     sensors.DDMmotor(
     AnalogPin.P13,
     0,
-    AnalogPin.P0,
+    AnalogPin.P14,
     100
     )
     sensors.DDMmotor(
     AnalogPin.P15,
     0,
-    AnalogPin.P0,
+    AnalogPin.P16,
     100
     )
 }
@@ -57,13 +57,13 @@ function left () {
     sensors.DDMmotor(
     AnalogPin.P13,
     0,
-    AnalogPin.P0,
+    AnalogPin.P14,
     0
     )
     sensors.DDMmotor(
     AnalogPin.P15,
     0,
-    AnalogPin.P0,
+    AnalogPin.P16,
     100
     )
 }
@@ -71,17 +71,18 @@ function stop () {
     sensors.DDMmotor(
     AnalogPin.P13,
     0,
-    AnalogPin.P0,
+    AnalogPin.P14,
     0
     )
     sensors.DDMmotor(
     AnalogPin.P15,
     0,
-    AnalogPin.P0,
+    AnalogPin.P16,
     0
     )
 }
-radio.setGroup(7)
+radio.setGroup(6)
+stop()
 basic.forever(function () {
 	
 })
