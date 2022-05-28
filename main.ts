@@ -34,7 +34,7 @@ function back () {
     )
     sensors.DDMmotor(
     AnalogPin.P15,
-    1,
+    0,
     AnalogPin.P16,
     100
     )
@@ -48,7 +48,7 @@ function front () {
     )
     sensors.DDMmotor(
     AnalogPin.P15,
-    0,
+    1,
     AnalogPin.P16,
     100
     )
@@ -62,7 +62,7 @@ function left () {
     )
     sensors.DDMmotor(
     AnalogPin.P15,
-    0,
+    1,
     AnalogPin.P16,
     100
     )
@@ -81,7 +81,7 @@ function stop () {
     0
     )
 }
-radio.setGroup(6)
+radio.setGroup(10)
 stop()
 basic.forever(function () {
 	
